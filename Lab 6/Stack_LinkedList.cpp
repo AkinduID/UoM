@@ -92,7 +92,7 @@ int main(){
 
 	auto duration = duration_cast<microseconds>(stop - start);
 
-	cout << "Time taken by recursive function: "
+	cout << "Time taken by Linked List: "
 		<< duration.count() << " microseconds" << endl;
         
     return 0;
