@@ -1,4 +1,6 @@
 #include<iostream>
+#include<chrono>
+using namespace std::chrono;
 using namespace std;
 
 class Stack {
@@ -65,6 +67,7 @@ class Stack {
 
 int main() {
     Stack S;
+    auto start = high_resolution_clock::now();
     S.setSize(10);
     S.Push(8);
     S.Push(10);
@@ -88,4 +91,12 @@ int main() {
     S.Push(3);
     S.Push(1);
     S.Display();
+    auto stop = high_resolution_clock::now();
+
+	auto duration = duration_cast<microseconds>(stop - start);
+
+	cout << "Time taken by Array: "
+		<< duration.count() << " microseconds" << endl;
+        
+    return 0;
 }
