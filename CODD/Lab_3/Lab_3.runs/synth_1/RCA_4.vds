@@ -1,0 +1,301 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 15 09:41:58 2023
+# Process ID: 18156
+# Current directory: E:/Xilinx/Projects/Lab_3/Lab_3.runs/synth_1
+# Command line: vivado.exe -log RCA_4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RCA_4.tcl
+# Log file: E:/Xilinx/Projects/Lab_3/Lab_3.runs/synth_1/RCA_4.vds
+# Journal file: E:/Xilinx/Projects/Lab_3/Lab_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RCA_4.tcl -notrace
+Command: synth_design -top RCA_4 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21616 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 356.629 ; gain = 99.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RCA_4' [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/RCA_4.vhd:51]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/RCA_4.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'FA' [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/FA.vhd:42]
+INFO: [Synth 8-3491] module 'HA' declared at 'E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/HA.vhd:32' bound to instance 'HA_0' of component 'HA' [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/FA.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'HA' [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/HA.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'HA' (1#1) [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/HA.vhd:38]
+INFO: [Synth 8-3491] module 'HA' declared at 'E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/HA.vhd:32' bound to instance 'HA_1' of component 'HA' [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/FA.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'FA' (2#1) [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/FA.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/RCA_4.vhd:71]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/RCA_4.vhd:78]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_3' of component 'FA' [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/RCA_4.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'RCA_4' (3#1) [E:/Xilinx/Projects/Lab_3/Lab_3.srcs/sources_1/new/RCA_4.vhd:51]
+WARNING: [Synth 8-3331] design RCA_4 has unconnected port C_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 411.473 ; gain = 153.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 411.473 ; gain = 153.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 411.473 ; gain = 153.914
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc]
+WARNING: [Vivado 12-584] No ports matched 'A'. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'A'. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'B'. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'B'. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S'. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S'. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'C'. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'C'. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Xilinx/Projects/Lab_3/Basys3Labs.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 705.492 ; gain = 0.297
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 705.492 ; gain = 447.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 705.492 ; gain = 447.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 705.492 ; gain = 447.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 705.492 ; gain = 447.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design RCA_4 has unconnected port C_in
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 705.492 ; gain = 447.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:33 . Memory (MB): peak = 721.535 ; gain = 463.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:33 . Memory (MB): peak = 721.535 ; gain = 463.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:33 . Memory (MB): peak = 721.535 ; gain = 463.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 722.664 ; gain = 465.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 722.664 ; gain = 465.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 722.664 ; gain = 465.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 722.664 ; gain = 465.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 722.664 ; gain = 465.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 722.664 ; gain = 465.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT3 |     2|
+|3     |LUT4 |     1|
+|4     |LUT6 |     2|
+|5     |IBUF |     8|
+|6     |OBUF |     5|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    19|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 722.664 ; gain = 465.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 722.719 ; gain = 171.141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 722.719 ; gain = 465.160
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 11 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:38 . Memory (MB): peak = 745.293 ; gain = 500.465
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/Xilinx/Projects/Lab_3/Lab_3.runs/synth_1/RCA_4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RCA_4_utilization_synth.rpt -pb RCA_4_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.284 . Memory (MB): peak = 745.660 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 15 09:42:46 2023...

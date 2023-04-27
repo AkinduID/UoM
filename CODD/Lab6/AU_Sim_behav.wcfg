@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AU_Sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AU_Sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="158247666fs"></ZoomStartTime>
+      <ZoomEndTime time="577330922fs"></ZoomEndTime>
+      <Cursor1Time time="991581000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="83"></NameColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/AU_Sim/A" type="array">
+      <obj_property name="ElementShortName">A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">A[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/AU_Sim/S" type="array">
+      <obj_property name="ElementShortName">S[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/AU_Sim/RegSel" type="logic">
+      <obj_property name="ElementShortName">RegSel</obj_property>
+      <obj_property name="ObjectShortName">RegSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AU_Sim/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AU_Sim/UUT/Slow_Clk_0/Clk_in" type="logic">
+      <obj_property name="ElementShortName">Clk_in</obj_property>
+      <obj_property name="ObjectShortName">Clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AU_Sim/UUT/Slow_Clk_0/Clk_out" type="logic">
+      <obj_property name="ElementShortName">Clk_out</obj_property>
+      <obj_property name="ObjectShortName">Clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AU_Sim/UUT/Slow_Clk_0/count" type="other">
+      <obj_property name="ElementShortName">count</obj_property>
+      <obj_property name="ObjectShortName">count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AU_Sim/UUT/Slow_Clk_0/clk_status" type="logic">
+      <obj_property name="ElementShortName">clk_status</obj_property>
+      <obj_property name="ObjectShortName">clk_status</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AU_Sim/Zero" type="logic">
+      <obj_property name="ElementShortName">Zero</obj_property>
+      <obj_property name="ObjectShortName">Zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AU_Sim/Carry" type="logic">
+      <obj_property name="ElementShortName">Carry</obj_property>
+      <obj_property name="ObjectShortName">Carry</obj_property>
+   </wvobject>
+</wave_config>
