@@ -1,2 +1,2 @@
 # UoM
-# I Use this repository to store all the files i create for my assignments at the university
+# I Use this Repository to store all the files I create for my assignments at the University
